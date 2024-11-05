@@ -1,0 +1,136 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+}
+
+/* Header and Navigation Styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Style for the logo and company name */
+.logo {
+    display: flex; /* Flexbox to align items in one row */
+    align-items: center; /* Align vertically */
+}
+
+.logo img {
+    margin-right: 10px; /* Space between the logo and company name */
+}
+
+.logo h2 span {
+    font-size: 28px; /* Font size for the company name */
+    color: rgb(178, 223, 14); /* Change to your desired color */
+    vertical-align: middle; /* Ensure text aligns vertically with the image */
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.register-btn {
+    text-decoration: none;
+    background-color: #ff4d4d;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #ff3333;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('https://t4.ftcdn.net/jpg/01/28/13/43/360_F_128134342_LrI1CSKCncfyBRPlTayXcGCFm0ys0WOB.jpg'); /* Relative path to image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(227, 237, 228);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff3333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
